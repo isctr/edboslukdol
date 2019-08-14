@@ -21690,9 +21690,10 @@ cr.getObjectRefTable = function () { return [
 	cr.plugins_.TextBox,
 	cr.plugins_.Touch,
 	cr.plugins_.Text,
+	cr.system_object.prototype.cnds.OnLayoutStart,
+	cr.system_object.prototype.acts.CreateObject,
 	cr.plugins_.Touch.prototype.cnds.OnTouchObject,
 	cr.plugins_.TextBox.prototype.cnds.CompareText,
-	cr.system_object.prototype.acts.CreateObject,
 	cr.system_object.prototype.acts.AddVar,
 	cr.plugins_.TextBox.prototype.acts.SetReadOnly,
 	cr.plugins_.Sprite.prototype.acts.Destroy,
@@ -21700,5 +21701,5 @@ cr.getObjectRefTable = function () { return [
 	cr.system_object.prototype.acts.SubVar,
 	cr.system_object.prototype.cnds.EveryTick,
 	cr.plugins_.Text.prototype.acts.SetText,
-	cr.system_object.prototype.cnds.OnLayoutStart
+	cr.system_object.prototype.acts.NextPrevLayout
 ];};
